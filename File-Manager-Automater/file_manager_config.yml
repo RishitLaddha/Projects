@@ -1,0 +1,27 @@
+# file_manager_config.yml
+# This configuration file defines settings for file compression and supported file types.
+# The values below are used by the FileManagerAutomater project (agents.py) to determine
+# which compression method to use for each file type, as well as specifying the API endpoints.
+
+# "compression_method" specifies the compression service to use for different file formats.
+# Each item in the list is a mapping where the key is the file type (e.g., PDF, JPG, PNG)
+# and the value is the method used for compression.
+compression_method:
+  - PDF: "convertapi"   # Use ConvertAPI to compress PDF files.
+  - JPG: "tinypng"      # Use TinyPNG to compress JPG files.
+  - PNG: "tinypng"      # Use TinyPNG to compress PNG files.
+
+# "file_types" lists the file formats that are supported by the system.
+# Only files with these extensions will be processed by the agent.
+file_types:
+  - PDF
+  - JPG
+  - PNG
+
+# "tinypng_url" is the API endpoint URL for the TinyPNG compression service.
+# This URL is used to send image files for compression.
+tinypng_url: "Paste API endpoint URL"
+
+# "convertapi_url" is the API endpoint URL for the ConvertAPI PDF compression service.
+# This URL is used to send PDF files for compression.
+convertapi_url: "Paste API endpoint URL"

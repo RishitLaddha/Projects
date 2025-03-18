@@ -1,0 +1,12 @@
+
+# agentic_config.yml
+# This configuration file specifies the folder paths used by the FileManagerAutomater project.
+# These paths tell the system where to find the input files and where to store the organized and compressed output.
+
+# "input_folder_path" is the directory containing the files to be processed.
+# All files in this folder (and its subdirectories) will be scanned by the agent.
+input_folder_path: "data/input_folder"
+
+# "output_folder_path" is the directory where the processed files will be moved and organized.
+# The agent creates subfolders within this directory based on file categories (e.g., PDFs, Images).
+output_folder_path: "data/output_folder"

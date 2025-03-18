@@ -1,0 +1,10 @@
+PyYAML
+requests
+schedule
+tinify
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+yfinance
+python-dotenv
+google-generativeai
